@@ -36,7 +36,7 @@ async def show_repair_maintenance_subsection(query: CallbackQuery, context: Cont
         [InlineKeyboardButton("Моторное масло для двигателя внутреннего сгорания", callback_data=json.dumps({"s": 'service_garanty', "t": 'motor_oil_engines'}))],
         [InlineKeyboardButton("Межсервисные интервалы Технического обслуживания", callback_data=json.dumps({"s": 'service_garanty', "t": 'service_intervals'}))],
          [InlineKeyboardButton("Регламент Технического обслуживания", callback_data=json.dumps({"s": 'service_garanty', "t": 'maintenance_regulations'}))],
-         [InlineKeyboardButton("Обновление программного обеспечения электронных блоков управления автомобиля", callback_data=json.dumps({"s": 'service_garanty', "t": 'updating_the_software'}))],
+         [InlineKeyboardButton("Обновление ПО электронных блоков управления автомобиля", callback_data=json.dumps({"s": 'service_garanty', "t": 'updating_the_software'}))],
         [InlineKeyboardButton("Прохождение Технического обслуживания у неавторизованного сервисного центра VOYAH", callback_data=json.dumps({"s": 'service_garanty', "t": 'technical_service'}))],
     ]
     reply_markup = InlineKeyboardMarkup(connection_subbuttons)
@@ -70,7 +70,7 @@ async def show_service_garanty_subsection(query: CallbackQuery, context: Context
         [InlineKeyboardButton("Что делать, если утеряна сервисная книжка автомобиля?", callback_data=json.dumps({"s": 'service_garanty', "t": 'service_book_lost'}))],
         [InlineKeyboardButton("Отказ в гарантийном ремонте", callback_data=json.dumps({"s": 'service_garanty', "t": 'refusal_repair'}))],
         [InlineKeyboardButton("На гарантии ли автомобиль?", callback_data=json.dumps({"s": 'service_garanty', "t": 'car_warranty'}))],
-        [InlineKeyboardButton("Контракт гарантийной поддержки для автомобилей приобретенных по схеме ПИ", callback_data=json.dumps({"s": 'service_garanty', "t": 'contract_car_pi'}))],
+        [InlineKeyboardButton("Контракт гарантийной поддержки для авто купленных по схеме ПИ", callback_data=json.dumps({"s": 'service_garanty', "t": 'contract_car_pi'}))],
         [InlineKeyboardButton("Должен ли дилерский центр предоставлять подменный автомобиль", callback_data=json.dumps({"s": 'service_garanty', "t": 'replacement_car'}))],
         [InlineKeyboardButton("Как получить информацию о сервисных и отзывных кампаниях?", callback_data=json.dumps({"s": 'service_garanty', "t": 'info_call_cmpgns'}))],
         [InlineKeyboardButton("Дилер оформил платный заказ-наряд на диагностику ", callback_data=json.dumps({"s": 'service_garanty', "t": 'dealer_paid_work'}))]

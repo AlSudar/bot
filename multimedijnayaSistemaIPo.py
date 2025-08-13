@@ -68,7 +68,7 @@ async def show_know_cheap_subsection(query: CallbackQuery, context: ContextTypes
 
 async def show_unknow_cheap_subsection(query: CallbackQuery, context: ContextTypes.DEFAULT_TYPE):
     connection_subbuttons = [
-        [InlineKeyboardButton("Самостоятельно посмотреть версию ПО в настройках мультимедийной системы", callback_data=json.dumps({"s": 'multimedia_i_po', "t": 'free_unknow_cheep_1'}))],
+        [InlineKeyboardButton("Проверить версию ПО в настройках мультимедиа самостоятельно", callback_data=json.dumps({"s": 'multimedia_i_po', "t": 'free_unknow_cheep_1'}))],
         [InlineKeyboardButton("Не удалось разобраться с версиями ПО", callback_data=json.dumps({"s": 'multimedia_i_po', "t": 'free_unknow_cheep_help'}))],
     ]
     reply_markup = InlineKeyboardMarkup(connection_subbuttons)
@@ -120,7 +120,7 @@ async def show_error_car_subsection(query: CallbackQuery, context: ContextTypes.
     ]
     reply_markup = InlineKeyboardMarkup(connection_subbuttons)
     await query.edit_message_text(
-        text="Установлено ли в автомобиле ПО от сторонних поставщиков, то есть установленное не в авторизованном дилерском центре VOYAH?",
+        text="Есть ли стороннее ПО в авто, установленное не у дилера VOYAH?",
         reply_markup=reply_markup
     )
 
@@ -131,7 +131,7 @@ async def show_internet_error_car_subsection(query: CallbackQuery, context: Cont
     ]
     reply_markup = InlineKeyboardMarkup(connection_subbuttons)
     await query.edit_message_text(
-        text="Закончился лимит трафика Интернета или не пополнили своевременно баланс?",
+        text="Закончился лимит трафика Интернета или не пополнили баланс?",
         reply_markup=reply_markup
     )
 

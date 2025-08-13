@@ -76,7 +76,7 @@ async def show_simcard_error_before_work_subsection(query: CallbackQuery, contex
     ]
     reply_markup = InlineKeyboardMarkup(connection_subbuttons)
     await query.edit_message_text(
-        text="Закончился лимит трафика Интернета или не пополнили своевременно баланс?",
+        text="Закончился лимит трафика Интернета или не пополнили баланс?",
         reply_markup=reply_markup
     )
 

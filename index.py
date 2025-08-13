@@ -152,7 +152,7 @@ def main():
     app = ApplicationBuilder().token(TOKEN).build()
 
 
-    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, any_message_handler))  # Обработчик всех текстовых сообщений
+    app.add_handler(MessageHandler(filters.TEXT, any_message_handler))  # Обработчик всех текстовых сообщений
     app.add_handler(CallbackQueryHandler(button_callback))  # Добавляем обработчик нажатий на кнопки
 
     print("🚀 Бот запущен!")
