@@ -19,7 +19,7 @@ async def show_spare_parts_subsections(query: CallbackQuery, context: ContextTyp
     [InlineKeyboardButton("Подбор каталожного номера запасной части", callback_data=json.dumps({"s": 'spare_parts', "t": 'number_selection'}))],
     [InlineKeyboardButton("Возможность покупки запасной части у Импортера/Изготовителя", callback_data=json.dumps({"s": 'spare_parts', "t": 'buy_spare'}))],
     [InlineKeyboardButton("Долгий срок поставки запасной части", callback_data=json.dumps({"s": 'spare_parts', "ss": 'delivery_time'}))],
-    [InlineKeyboardButton("Моторное масло для двигателя внутреннего сгорания", callback_data=json.dumps({"s": 'spare_parts', "tt": 'motor-oil'}))],
+    [InlineKeyboardButton("Моторное масло для двигателя внутреннего сгорания", callback_data=json.dumps({"s": 'spare_parts', "t": 'motor-oil'}))],
     [InlineKeyboardButton("Назад", callback_data=json.dumps({"s": 'cancel'}))]
     ]
 

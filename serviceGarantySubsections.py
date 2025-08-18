@@ -102,7 +102,7 @@ async def handle_action_service_garanty(query: CallbackQuery, action_type: Secti
         'question': 'Качество выполненных работ'
     },
     'warranty_terms': {
-        'text': 'ЧС краткими условиями гарантии на автомобиль VOYAH, Вы сможете перейдя по ссылке: https://voyah.su/kratkie-usloviya-garantii. Подробные же условия гарантии на автомобиль изложены в Сервисной книжке Вашего автомобиля, переданной Вам при покупке.',
+        'text': 'С краткими условиями гарантии на автомобиль VOYAH, Вы сможете перейдя по ссылке: https://voyah.su/kratkie-usloviya-garantii. Подробные же условия гарантии на автомобиль изложены в Сервисной книжке Вашего автомобиля, переданной Вам при покупке.',
         'question': 'Условия гарантии'
     },
     'service_book_lost': {
@@ -193,6 +193,10 @@ async def handle_action_service_garanty(query: CallbackQuery, action_type: Secti
         'text': 'Инструкция пользователя Мобильного приложения VOYAH https://voyah.su/media/download/uRYsLu__prilozenie-voyah-opisanie-funkcionala.pdf',
         'question': 'Инструкция пользователя Мобильного приложения VOYAH'
     },
+    'registration_dealership': {
+		'text': 'Для записи автомобиля в сервис, рекомендуем обратиться к любому  официальному дилеру VOYAH в России. С полным списком дилеров Вы можете ознакомится на нашем официальном сайте: https://voyah.su/voyah-space/dealerships, также запись возможно осуществить заполнив форму обратной связи: https://voyah.su/voyah-service/service-form?mobile ',
+        'question': 'Запись в дилерский центр'
+	}
 }
 
 
